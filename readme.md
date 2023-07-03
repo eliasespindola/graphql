@@ -27,3 +27,7 @@ query courseDetails {
   }
 }
 ```
+
+- Falta fazer
+  -  Mutation
+  -  Find By Id  
