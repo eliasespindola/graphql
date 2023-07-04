@@ -15,7 +15,7 @@ public class Course {
     private Long id;
     private String name;
     private String description;
-    @OneToOne
+    @ManyToOne
     private Category category;
 
     public Course(String name, String description, Category category) {

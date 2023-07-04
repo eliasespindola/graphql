@@ -20,8 +20,13 @@ public class CategoryController {
         return categoryRepository.findAll();
     }
 
+    @QueryMapping
+    public Category categoryById(@Argument Long id){
+        return categoryRepository.findById(id).get();
+    }
+
     @MutationMapping
-    public Category createCategory(@Argument NewCategory newCategory){
+    public Category createCategory(@Argument("input") NewCategory newCategory){
         Category category = new Category(newCategory.getName(), newCategory.getDescription());
         return categoryRepository.save(category);
     }

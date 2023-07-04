@@ -7,7 +7,9 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class NewCategory {
+public class NewCourse {
     private String name;
     private String description;
+
+    private Long categoryId;
 }
